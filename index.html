@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Planner</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/50fbe7609c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="toolbox-container">
+      <!-- project name -->
+      <h1 style="color: white; text-shadow: 2px 2px black">TASK PLANNER</h1>
+      <!--toolbox with priority options  -->
+      <div class="toolbox-priority-container">
+        <div class="tomato color">REQUESTED</div>
+        <div class="dodgerblue color">IN PROGRESS</div>
+        <div class="green color">DONE</div>
+        <div class="black color">ARCHIVED</div>
+      </div>
+      <!-- create ticket and delete mode -->
+      <div class="action-btn-container">
+        <div class="add-btn">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="remove-btn">
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Box -->
+    <div class="modal-container">
+      <div class="priority-colors-container">
+        <div class="tomato priority-color active"></div>
+        <div class="dodgerblue priority-color"></div>
+        <div class="green priority-color"></div>
+        <div class="black priority-color"></div>
+      </div>
+      <textarea
+        class="textArea-container"
+        placeholder="Select status, enter task details and press Control"
+      ></textarea>
+    </div>
+
+    <!-- main -->
+    <div class="main-container">
+      <!-- ticket -->
+      <!-- <div class="ticket-container">
+            <div class="ticket-color"></div>
+            <div class="ticket-id"></div>
+            <div class="task-area"></div>
+            <div class="ticket-lock">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+        </div> -->
+    </div>
+  </body>
+  <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+  <script src="index.js"></script>
+</html>
