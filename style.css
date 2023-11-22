@@ -70,18 +70,22 @@ body {
 }
 
 .action-btn-container {
-  height: 4rem;
+  padding: 2px;
+  height: auto;
   width: 10rem;
   background-color: #303030;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   color: white;
   border-radius: 10px;
 }
 
 .action-btn-container > * {
+  margin: 5px;
+  padding: 5px;
   display: flex;
-  width: 50%;
+  /* width: 50%; */
   font-size: 2.5rem;
   justify-content: center;
   align-items: center;
